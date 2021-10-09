@@ -16,14 +16,19 @@
 ///   File: main.cpp
 ///
 /// Author: $author$
-///   Date: 7/31/2021
+///   Date: 7/31/2021, 10/9/2021
 ///////////////////////////////////////////////////////////////////////
 #include "xos/app/console/rostra/main.hpp"
 
 #if defined(XOS_CONSOLE_MAIN_MAIN)
-#include "xos/console/main_main.cpp"
+#if !defined(XOS_APP_CONSOLE_ROSTRA_MAIN_INSTANCE)
 #define XOS_APP_CONSOLE_ROSTRA_MAIN_INSTANCE
+#endif /// !defined(XOS_APP_CONSOLE_ROSTRA_MAIN_INSTANCE)
 #endif /// defined(XOS_CONSOLE_MAIN_MAIN)
+
+#if defined(XOS_APP_CONSOLE_ROSTRA_MAIN_INSTANCE)
+#include "xos/console/main_main.cpp"
+#endif /// defined(XOS_APP_CONSOLE_ROSTRA_MAIN_INSTANCE)
 
 namespace xos {
 namespace app {
