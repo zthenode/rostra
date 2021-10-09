@@ -86,8 +86,6 @@ $${CRONO_SRC}/xos/console/logger.hpp \
 \
 $${ROSTRA_SRC}/xos/app/console/rostra/main_opt.hpp \
 $${ROSTRA_SRC}/xos/app/console/rostra/main.hpp \
-\
-$${NADIR_SRC}/xos/console/main_main.hpp \
 
 # rostra_exe SOURCES
 #
@@ -113,8 +111,6 @@ $${CRONO_SRC}/xos/logger/defines.cpp \
 \
 $${ROSTRA_SRC}/xos/app/console/rostra/main_opt.cpp \
 $${ROSTRA_SRC}/xos/app/console/rostra/main.cpp \
-\
-$${NADIR_SRC}/xos/console/main_main.cpp \
 
 ########################################################################
 # rostra_exe FRAMEWORKS
@@ -130,4 +126,3 @@ $${rostra_LIBS} \
 ########################################################################
 # NO Qt
 QT -= gui core
-
